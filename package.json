@@ -1,1 +1,40 @@
-{     "devDependencies": {         "winston-elasticsearch": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-winston-elasticsearch",     "homepage": "https://github.com/npmtest/node-npmtest-winston-elasticsearch",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-winston-elasticsearch.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [winston-elasticsearch (v0.5.0)](https://github.com/vanthome/winston-elasticsearch#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-winston-elasticsearch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-winston-elasticsearch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-winston-elasticsearch.svg)](https://travis-ci.org/npmtest/node-npmtest-winston-elasticsearch)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha",
+        "winston-elasticsearch": "*"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-winston-elasticsearch",
+    "keywords": [
+        "coverage",
+        "test",
+        "winston-elasticsearch"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_winston_elasticsearch.js",
+    "name": "npmtest-winston-elasticsearch",
+    "nameAlias": "npmtest_winston_elasticsearch",
+    "nameOriginal": "npmtest-winston-elasticsearch",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-winston-elasticsearch.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
