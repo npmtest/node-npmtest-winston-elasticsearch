@@ -1,6 +1,6 @@
 # npmtest-winston-elasticsearch
 
-#### test coverage for  [winston-elasticsearch (v0.5.0)](https://github.com/vanthome/winston-elasticsearch#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-winston-elasticsearch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-winston-elasticsearch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-winston-elasticsearch.svg)](https://travis-ci.org/npmtest/node-npmtest-winston-elasticsearch)
+#### basic test coverage for  [winston-elasticsearch (v0.5.0)](https://github.com/vanthome/winston-elasticsearch#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-winston-elasticsearch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-winston-elasticsearch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-winston-elasticsearch.svg)](https://travis-ci.org/npmtest/node-npmtest-winston-elasticsearch)
 
 #### An Elasticsearch transport for winston
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-winston-elasticsearch/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-winston-elasticsearch/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-winston-elasticsearch/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-winston-elasticsearch/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-winston-elasticsearch/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-winston-elasticsearch/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-winston-elasticsearch/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-winston-elasticsearch/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-winston-elasticsearch/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-winston-elasticsearch/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-winston-elasticsearch/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-winston-elasticsearch/build/coverage.html/index.html)
 
@@ -114,7 +114,8 @@
         "mocha": "mocha ./test/*",
         "test": "npm run lint && npm run mocha"
     },
-    "version": "0.5.0"
+    "version": "0.5.0",
+    "bin": {}
 }
 ```
 
